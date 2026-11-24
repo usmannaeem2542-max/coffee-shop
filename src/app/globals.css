@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --espresso-950: #160e09;
+  --espresso-900: #1e130d;
+  --espresso-800: #2c1b12;
+  --espresso-700: #462d20;
+  --espresso-500: #6e503f;
+  --cream-50: #fbf6ee;
+  --cream-100: #f3e9da;
+  --cream-200: #e7d7c2;
+  --caramel-400: #dfa468;
+  --caramel-500: #c47a38;
+  --caramel-600: #a65f23;
+  --caramel-700: #854918;
+}
+
+@theme inline {
+  --color-espresso-950: var(--espresso-950);
+  --color-espresso-900: var(--espresso-900);
+  --color-espresso-800: var(--espresso-800);
+  --color-espresso-700: var(--espresso-700);
+  --color-espresso-500: var(--espresso-500);
+  --color-cream-50: var(--cream-50);
+  --color-cream-100: var(--cream-100);
+  --color-cream-200: var(--cream-200);
+  --color-caramel-400: var(--caramel-400);
+  --color-caramel-500: var(--caramel-500);
+  --color-caramel-600: var(--caramel-600);
+  --color-caramel-700: var(--caramel-700);
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, Cambria, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream-50);
+  color: var(--espresso-900);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--caramel-500);
+  color: var(--cream-50);
+}
